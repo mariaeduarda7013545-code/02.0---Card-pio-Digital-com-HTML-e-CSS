@@ -1,0 +1,209 @@
+/* ==============================
+CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #f5ead8;
+color: #4b2e20;
+line-height: 1.6;
+}
+
+/* ==============================
+CABEÇALHO
+============================== */
+
+.cabecalho {
+background: linear-gradient(135deg, #5a3825, #8b5e3c);
+color: #fff8ed;
+text-align: center;
+padding: 50px 20px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cabecalho h1 {
+font-family: 'Playfair Display', serif;
+font-size: 3rem;
+margin-bottom: 10px;
+}
+
+.cabecalho p {
+color: #f4d89b;
+font-size: 1.2rem;
+}
+
+/* ==============================
+CONTEÚDO PRINCIPAL
+============================== */
+
+main {
+width: 90%;
+max-width: 1000px;
+margin: 40px auto;
+}
+
+/* ==============================
+IMAGEM PRINCIPAL
+============================== */
+
+.imagem-principal {
+margin-bottom: 35px;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 6px 18px rgba(75, 46, 32, 0.25);
+}
+
+.imagem-principal img {
+width: 100%;
+height: 350px;
+display: block;
+object-fit: cover;
+}
+
+/* ==============================
+CARDS DO CARDÁPIO
+============================== */
+
+.cardapio {
+background-color: #fffaf2;
+padding: 30px;
+margin-bottom: 30px;
+border-radius: 18px;
+box-shadow: 0 5px 15px rgba(75, 46, 32, 0.15);
+border: 1px solid #e5cda8;
+}
+
+.cardapio h2 {
+font-family: 'Playfair Display', serif;
+color: #6b4226;
+text-align: center;
+font-size: 2rem;
+margin-bottom: 25px;
+}
+
+/* ==============================
+ITENS DO CARDÁPIO
+============================== */
+
+.item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+
+```
+padding: 18px 5px;
+border-bottom: 1px solid #e5d4bb;
+```
+
+}
+
+.item:last-child {
+border-bottom: none;
+}
+
+.item h3 {
+color: #5a3825;
+font-size: 1.15rem;
+margin-bottom: 4px;
+}
+
+.item p {
+color: #806b5b;
+font-size: 0.9rem;
+}
+
+.preco {
+color: #b07a19;
+font-size: 1.1rem;
+font-weight: 600;
+white-space: nowrap;
+}
+
+/* ==============================
+RODAPÉ
+============================== */
+
+.rodape {
+background-color: #4b2e20;
+color: #fff8ed;
+text-align: center;
+padding: 35px 20px;
+margin-top: 50px;
+}
+
+.rodape h2 {
+font-family: 'Playfair Display', serif;
+color: #f4d89b;
+margin-bottom: 15px;
+}
+
+.rodape p {
+margin: 5px 0;
+}
+
+.copyright {
+margin-top: 20px !important;
+color: #d8c4aa;
+font-size: 0.85rem;
+}
+
+/* ==============================
+RESPONSIVIDADE
+============================== */
+
+@media (max-width: 600px) {
+
+```
+.cabecalho {
+    padding: 35px 15px;
+}
+
+.cabecalho h1 {
+    font-size: 2.2rem;
+}
+
+.cabecalho p {
+    font-size: 1rem;
+}
+
+main {
+    width: 92%;
+    margin: 25px auto;
+}
+
+.imagem-principal img {
+    height: 220px;
+}
+
+.cardapio {
+    padding: 20px;
+}
+
+.cardapio h2 {
+    font-size: 1.6rem;
+}
+
+.item {
+    align-items: flex-start;
+}
+
+.item h3 {
+    font-size: 1rem;
+}
+
+.item p {
+    font-size: 0.82rem;
+}
+
+.preco {
+    font-size: 1rem;
+}
+
+}
